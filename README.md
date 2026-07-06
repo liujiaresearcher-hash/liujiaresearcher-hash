@@ -87,7 +87,7 @@ flowchart TB
 
     subgraph Extension["Exploratory Extensions"]
         WHSP["wearable-human-state-profiling"]
-        HMSF["human-movement-state-feedback"]
+        HMSF["Human Movement-State Feedback"]
     end
 
     Theme ==> IMDS
@@ -104,7 +104,7 @@ flowchart TB
     AM --> A3["Interpretable quality indicators"]
 
     WHSP --> W1["Multimodal human-state sensing"]
-    HMSF --> H1["Movement-state feedback prototype"]
+    HMSF --> H1["Human Movement-State Feedback"]
 
     classDef theme fill:#F8FAFC,stroke:#111827,stroke-width:2px,color:#111827;
     classDef core fill:#EEF6FF,stroke:#2F5D7C,stroke-width:2px,color:#111827;
@@ -178,17 +178,17 @@ engineering contexts.
 | **Output** | A structured exploratory workflow for converting sensing signals into human-state indicators. |
 | **Research relevance** | Broadens the state-assessment theme toward human factors and sensing-informed engineering operations. |
 
-### [human-movement-state-feedback](https://github.com/liujiaresearcher-hash/human-movement-state-feedback)
+### [Human Movement-State Feedback](https://github.com/liujiaresearcher-hash/human-movement-state-feedback)
 
-Compact prototype for connecting movement-state estimation with feedback
-structures.
+Pose-landmark pipeline for movement-quality indicators, ergonomic state cues,
+feedback rationale, and future user-study design.
 
 | Field | Summary |
 | --- | --- |
-| **Problem** | Movement state estimation needs feedback structures that connect observed motion patterns to interpretable state updates. |
-| **Method** | Prototype modeling of movement-state representation and feedback loops. |
-| **Output** | A concise workflow for studying how movement-state information can be represented and updated. |
-| **Research relevance** | Serves as an exploratory prototype related to state estimation and feedback modeling beyond infrastructure assets. |
+| **Problem** | How can body-tracking data be transformed into interpretable movement-state indicators and user-facing feedback? |
+| **Method** | Synthetic 2D pose landmarks; joint/segment kinematics; movement-quality indicators; ergonomic state cues; feedback rationale cards. |
+| **Output** | Movement-state summaries, ergonomic cue summaries, feedback design cards, and a future user-study plan. |
+| **Research relevance** | Connects pose-based human movement analysis with embodied interaction, ergonomic awareness, and interpretable feedback design. |
 
 ## Technical Skills
 
