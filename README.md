@@ -32,6 +32,14 @@ raw observations to interpretable state assessment and practical action. I am
 especially interested in workflows that combine data-driven representation,
 physical reasoning, uncertainty awareness, and decision models.
 
+### Current HCI-facing direction
+
+I am currently extending my state-assessment and feedback-oriented research
+logic toward human factors and human-centred interaction. In this transition,
+I am interested in how physiological and movement-based signals can be
+transformed into interpretable, user-facing feedback for self-regulation,
+digital well-being, embodied interaction, and human-centred work systems.
+
 ## Research Pipeline
 
 ```mermaid
@@ -174,8 +182,8 @@ engineering contexts.
 | Field | Summary |
 | --- | --- |
 | **Problem** | Human state can influence operational performance, safety, and interaction with engineered systems. |
-| **Method** | Multimodal sensing organization for human-state estimation and operational state profiling. |
-| **Output** | A structured exploratory workflow for converting sensing signals into human-state indicators. |
+| **Method** | Physiological sensing workflow for baseline/stress modeling, subject-level state profiles, explanation summaries, uncertainty reporting, and feedback-card examples. |
+| **Output** | A structured exploratory workflow for converting wearable signals into interpretable human-state indicators and user-facing feedback cards. |
 | **Research relevance** | Broadens the state-assessment theme toward human factors by exploring how wearable sensing signals can be organized into interpretable human-state indicators. |
 
 ### [Human Movement-State Feedback](https://github.com/liujiaresearcher-hash/human-movement-state-feedback)
@@ -186,8 +194,8 @@ feedback rationale, and future user-study design.
 | Field | Summary |
 | --- | --- |
 | **Problem** | How can body-tracking data be transformed into interpretable movement-state indicators and user-facing feedback? |
-| **Method** | Synthetic 2D pose landmarks; joint/segment kinematics; movement-quality indicators; ergonomic state cues; feedback rationale cards. |
-| **Output** | Movement-state summaries, ergonomic cue summaries, feedback design cards, and a future user-study plan. |
+| **Method** | Synthetic 2D pose landmarks; joint/segment kinematics; pose-landmark movement indicators; ergonomic state cues; feedback rationale cards. |
+| **Output** | Movement-state summaries, ergonomic cue summaries, feedback rationale cards, and a future user-study design plan. |
 | **Research relevance** | Connects pose-based movement-state indicators with embodied interaction, ergonomic-state cues, interpretable feedback mapping, and human-centred work systems. |
 
 Boundary: synthetic 2D pose landmarks only; not a clinical rehabilitation tool, full RULA/REBA assessment, or full biomechanical model.
