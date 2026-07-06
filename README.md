@@ -176,7 +176,7 @@ engineering contexts.
 | **Problem** | Human state can influence operational performance, safety, and interaction with engineered systems. |
 | **Method** | Multimodal sensing organization for human-state estimation and operational state profiling. |
 | **Output** | A structured exploratory workflow for converting sensing signals into human-state indicators. |
-| **Research relevance** | Broadens the state-assessment theme toward human factors and sensing-informed engineering operations. |
+| **Research relevance** | Broadens the state-assessment theme toward human factors by exploring how wearable sensing signals can be organized into interpretable human-state indicators. |
 
 ### [Human Movement-State Feedback](https://github.com/liujiaresearcher-hash/human-movement-state-feedback)
 
@@ -188,7 +188,9 @@ feedback rationale, and future user-study design.
 | **Problem** | How can body-tracking data be transformed into interpretable movement-state indicators and user-facing feedback? |
 | **Method** | Synthetic 2D pose landmarks; joint/segment kinematics; movement-quality indicators; ergonomic state cues; feedback rationale cards. |
 | **Output** | Movement-state summaries, ergonomic cue summaries, feedback design cards, and a future user-study plan. |
-| **Research relevance** | Connects pose-based human movement analysis with embodied interaction, ergonomic awareness, and interpretable feedback design. |
+| **Research relevance** | Connects pose-based movement-state indicators with embodied interaction, ergonomic-state cues, interpretable feedback mapping, and human-centred work systems. |
+
+Boundary: synthetic 2D pose landmarks only; not a clinical rehabilitation tool, full RULA/REBA assessment, or full biomechanical model.
 
 ## Technical Skills
 
