@@ -125,6 +125,11 @@ flowchart TB
     class I1,I2,I3,A1,A2,A3,W1,H1 detail;
 ```
 
+These two exploratory demos extend my state-assessment background from
+engineering systems toward human-state sensing, asking how physiological and
+movement-based indicators may be translated into interpretable, user-facing
+feedback.
+
 ## Core Research Directions
 
 ### Infrastructure Condition Intelligence
