@@ -36,9 +36,9 @@ physical reasoning, uncertainty awareness, and decision models.
 
 I am currently extending my state-assessment and feedback-oriented research
 logic toward human factors and human-centred interaction. In this transition,
-I am interested in how physiological and movement-based signals can be
-transformed into interpretable, user-facing feedback for self-regulation,
-digital well-being, embodied interaction, and human-centred work systems.
+I am interested in how movement-based and physiological signals can be
+transformed into interpretable, user-facing feedback for self-awareness,
+self-regulation, embodied interaction, and human-centred work systems.
 
 ## Research Pipeline
 
@@ -94,14 +94,14 @@ flowchart TB
     end
 
     subgraph Extension["Exploratory Extensions"]
-        WHSP["wearable-human-state-profiling"]
         HMSF["Human Movement-State Feedback"]
+        WHSP["wearable-human-state-profiling"]
     end
 
     Theme ==> IMDS
     Theme ==> AM
-    Theme -. "state sensing extension" .-> WHSP
     Theme -. "feedback modeling extension" .-> HMSF
+    Theme -. "state sensing extension" .-> WHSP
 
     IMDS --> I1["Infrastructure deterioration modeling"]
     IMDS --> I2["Semi-Markov decision process"]
@@ -111,8 +111,8 @@ flowchart TB
     AM --> A2["Vision-based consistency evaluation"]
     AM --> A3["Interpretable quality indicators"]
 
-    WHSP --> W1["Multimodal human-state sensing"]
     HMSF --> H1["Human Movement-State Feedback"]
+    WHSP --> W1["Multimodal human-state sensing"]
 
     classDef theme fill:#F8FAFC,stroke:#111827,stroke-width:2px,color:#111827;
     classDef core fill:#EEF6FF,stroke:#2F5D7C,stroke-width:2px,color:#111827;
@@ -125,10 +125,9 @@ flowchart TB
     class I1,I2,I3,A1,A2,A3,W1,H1 detail;
 ```
 
-These two exploratory demos extend my state-assessment background from
-engineering systems toward human-state sensing, asking how physiological and
-movement-based indicators may be translated into interpretable, user-facing
-feedback.
+These exploratory extensions place movement-based feedback as the main
+HCI-facing thread, with wearable sensing used as complementary state
+information.
 
 ## Core Research Directions
 
@@ -179,31 +178,39 @@ additive manufacturing.
 | **Output** | A monitoring workflow for extracting visual features and assessing layer consistency. |
 | **Research relevance** | Extends engineering AI from civil infrastructure to manufacturing quality assessment while preserving a data-to-assessment-to-feedback logic. |
 
-### [wearable-human-state-profiling](https://github.com/liujiaresearcher-hash/wearable-human-state-profiling)
+### [Human Movement-State Assessment and Feedback](https://github.com/liujiaresearcher-hash/human-movement-state-feedback)
 
-Exploratory sensing workflow for organizing human-state information in
-engineering contexts.
+A movement-first research prototype that derives movement-quality indicators
+and ergonomic-state cues from synthetic 2D pose landmarks, including trunk
+flexion, shoulder elevation, smoothness, rhythm, symmetry, and consistency.
+
+| Field | Summary |
+| --- | --- |
+| **Problem** | How can body-tracking data be transformed into interpretable movement-state indicators and user-facing feedback? |
+| **Method** | Synthetic 2D pose landmarks; trunk flexion, shoulder elevation, smoothness, rhythm, symmetry, and consistency indicators; ergonomic-state cues; feedback rationale cards. |
+| **Output** | Movement-state summaries, ergonomic cue summaries, feedback rationale cards, and exploratory user-facing feedback examples. |
+| **Research relevance** | This demo extends my state-assessment background toward embodied HCI by treating movement not only as a measurable signal, but as part of how users perceive, regulate, and interact through the body. It explores how movement indicators may be translated into feedback rationale and user-facing feedback for embodied interaction and human-centred work systems. |
+
+Boundary: synthetic 2D pose landmarks only; exploratory and non-clinical; not a
+clinical rehabilitation tool, full RULA/REBA assessment, or full biomechanical
+model.
+
+### [Wearable Human-State Profiling from Physiological Signals](https://github.com/liujiaresearcher-hash/wearable-human-state-profiling)
+
+A reproducible WESAD-based prototype for wearable human-state sensing using
+Empatica E4 ACC, BVP, EDA, and TEMP signals.
 
 | Field | Summary |
 | --- | --- |
 | **Problem** | Human state can influence operational performance, safety, and interaction with engineered systems. |
 | **Method** | Physiological sensing workflow for baseline/stress modeling, subject-level state profiles, explanation summaries, uncertainty reporting, and feedback-card examples. |
-| **Output** | A structured exploratory workflow for converting wearable signals into interpretable human-state indicators and user-facing feedback cards. |
-| **Research relevance** | Broadens the state-assessment theme toward human factors by exploring how wearable sensing signals can be organized into interpretable human-state indicators. |
+| **Output** | A structured exploratory workflow for converting wearable signals into interpretable human-state indicators and reflective user-facing feedback cards. |
+| **Research relevance** | This demo complements the movement-feedback prototype by exploring how physiological sensing signals can be organised into interpretable human-state indicators. It is intended as an exploratory, non-clinical step toward personalised and understandable user-state feedback. |
 
-### [Human Movement-State Feedback](https://github.com/liujiaresearcher-hash/human-movement-state-feedback)
-
-Pose-landmark pipeline for movement-quality indicators, ergonomic state cues,
-feedback rationale, and future user-study design.
-
-| Field | Summary |
-| --- | --- |
-| **Problem** | How can body-tracking data be transformed into interpretable movement-state indicators and user-facing feedback? |
-| **Method** | Synthetic 2D pose landmarks; joint/segment kinematics; pose-landmark movement indicators; ergonomic state cues; feedback rationale cards. |
-| **Output** | Movement-state summaries, ergonomic cue summaries, feedback rationale cards, and a future user-study design plan. |
-| **Research relevance** | Connects pose-based movement-state indicators with embodied interaction, ergonomic-state cues, interpretable feedback mapping, and human-centred work systems. |
-
-Boundary: synthetic 2D pose landmarks only; not a clinical rehabilitation tool, full RULA/REBA assessment, or full biomechanical model.
+Together, these exploratory demos extend my engineering state-assessment
+background toward human-state sensing and reflective user-facing feedback, with
+movement-based indicators as the main embodied interaction thread and
+physiological sensing as complementary state information.
 
 ## Technical Skills
 
