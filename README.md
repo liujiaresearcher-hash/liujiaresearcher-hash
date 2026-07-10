@@ -2,17 +2,17 @@
 
 # Jia Liu
 
-**Engineer & Researcher | Engineering AI for Infrastructure Systems**
+**Engineer & Researcher | Monitoring-to-Decision Modelling for Engineering Assets**
 
-Infrastructure Monitoring &middot; Additive Manufacturing Quality Assessment &middot; Mechanics-informed AI &middot; Decision Optimization
+Health / Quality State Assessment · Predictive Maintenance · Process Monitoring · Decision Optimisation · Engineering AI
 
 <p>
-  <img src="https://img.shields.io/badge/Engineering%20AI-research-2F5D7C?style=flat-square" alt="Engineering AI" />
-  <img src="https://img.shields.io/badge/Infrastructure%20Systems-monitoring-4B6F8A?style=flat-square" alt="Infrastructure Systems" />
-  <img src="https://img.shields.io/badge/Additive%20Manufacturing-quality%20assessment-5F7F65?style=flat-square" alt="Additive Manufacturing" />
-  <img src="https://img.shields.io/badge/Decision%20Optimization-SMDP-7A6A3A?style=flat-square" alt="Decision Optimization" />
+  <img src="https://img.shields.io/badge/Monitoring--to--Decision-research-2F5D7C?style=flat-square" alt="Monitoring-to-Decision" />
+  <img src="https://img.shields.io/badge/Predictive%20Maintenance-PHM-4B6F8A?style=flat-square" alt="Predictive Maintenance" />
+  <img src="https://img.shields.io/badge/Process%20Monitoring-quality%20state-5F7F65?style=flat-square" alt="Process Monitoring" />
+  <img src="https://img.shields.io/badge/Decision%20Optimisation-SMDP-7A6A3A?style=flat-square" alt="Decision Optimisation" />
   <img src="https://img.shields.io/badge/Python-data%20analysis-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/MATLAB-engineering%20modeling-6B7280?style=flat-square" alt="MATLAB" />
+  <img src="https://img.shields.io/badge/MATLAB-engineering%20modelling-6B7280?style=flat-square" alt="MATLAB" />
 </p>
 
 </div>
@@ -21,196 +21,71 @@ Infrastructure Monitoring &middot; Additive Manufacturing Quality Assessment &mi
 
 ## Research Identity
 
-I work on **engineering AI for infrastructure systems**, with a focus on
-connecting monitoring, inspection, and sensing data to reliable engineering
-decisions. My interests sit at the intersection of civil infrastructure,
-bridge engineering, additive manufacturing quality assessment,
-mechanics-informed modeling, and maintenance decision optimization.
+I work on decision-oriented engineering AI for asset health and process quality
+assessment. My research interest is how monitoring, inspection, and sensing
+data can be transformed into interpretable health or quality states, and how
+these states can support maintenance, control, and operational decisions under
+uncertainty.
 
-The central question behind my work is how engineered systems can move from
-raw observations to interpretable state assessment and practical action. I am
-especially interested in workflows that combine data-driven representation,
-physical reasoning, uncertainty awareness, and decision models.
+My current focus is on:
 
-### Current HCI-facing direction
-
-I am currently extending my state-assessment and feedback-oriented research
-logic toward human factors and human-centred interaction. In this transition,
-I am interested in how movement-based and physiological signals can be
-transformed into interpretable, user-facing feedback for self-awareness,
-self-regulation, embodied interaction, and human-centred work systems.
+- health-state modelling and predictive maintenance for degradation-driven engineering assets;
+- maintenance and replacement decision support under uncertainty;
+- process monitoring and quality-state assessment for automated/additive manufacturing;
+- transferable monitoring-to-decision workflows for energy assets, infrastructure systems, and manufacturing processes.
 
 ## Research Pipeline
 
 ```mermaid
 flowchart LR
-    subgraph L1["Observation"]
-        A["Sensing / Inspection Data<br/>images / inspection records / sensor data"]
-    end
-
-    subgraph L2["Representation"]
-        B["Feature Representation<br/>defect indicators / degradation features"]
-    end
-
-    subgraph L3["Assessment"]
-        C["Quality / State Assessment<br/>layer consistency / bridge condition"]
-    end
-
-    subgraph L4["Decision"]
-        D["Decision Optimization<br/>SMDP / maintenance strategy"]
-    end
-
-    subgraph L5["Feedback"]
-        E["Engineering Feedback<br/>quality control / lifecycle management"]
-    end
+    A["Monitoring / Inspection / Sensing Data"]
+    B["Feature and Indicator Representation"]
+    C["Health / Quality State Assessment"]
+    D["Uncertainty-Aware Prediction"]
+    E["Maintenance / Control / Operational Decision Support"]
 
     A --> B --> C --> D --> E
-    E -. "updates monitoring, models, and strategies" .-> A
-
-    classDef data fill:#EEF6FF,stroke:#2F5D7C,stroke-width:1.2px,color:#111827;
-    classDef model fill:#F5F7F2,stroke:#5F7F65,stroke-width:1.2px,color:#111827;
-    classDef decision fill:#FFF7E6,stroke:#8A6D2F,stroke-width:1.2px,color:#111827;
-    classDef feedback fill:#F8FAFC,stroke:#6B7280,stroke-width:1.2px,color:#111827;
-
-    class A,B data;
-    class C model;
-    class D decision;
-    class E feedback;
 ```
 
-This pipeline reflects a decision-oriented view of engineering AI: data are
-not the endpoint, but the starting point for condition representation,
-uncertainty-aware assessment, and engineering action.
+This pipeline reflects a decision-oriented view of engineering AI: monitoring
+data are not the endpoint, but the starting point for interpretable state
+assessment and practical engineering decisions.
 
-## Research Ecosystem
+## Featured Research Demos
 
-```mermaid
-flowchart TB
-    Theme["Engineering AI<br/>for Infrastructure Systems"]
+### 1. [Battery Predictive Maintenance Decision](https://github.com/liujiaresearcher-hash/battery-predictive-maintenance-decision)
 
-    subgraph Core["Core Research Projects"]
-        IMDS["infrastructure-maintenance-decision-support"]
-        AM["am-layer-consistency-monitoring"]
-    end
+A lightweight, public-safe Python demo for battery health-state assessment,
+degradation-aware maintenance triggers, and decision support for energy asset
+management.
 
-    subgraph Extension["Exploratory Extensions"]
-        HMSF["Human Movement-State Feedback"]
-        WHSP["wearable-human-state-profiling"]
-    end
+Main role: energy asset PHM / BESS-oriented predictive maintenance demo.
 
-    Theme ==> IMDS
-    Theme ==> AM
-    Theme -. "feedback modeling extension" .-> HMSF
-    Theme -. "state sensing extension" .-> WHSP
+### 2. [Infrastructure Maintenance Decision Support](https://github.com/liujiaresearcher-hash/infrastructure-maintenance-decision-support)
 
-    IMDS --> I1["Infrastructure deterioration modeling"]
-    IMDS --> I2["Semi-Markov decision process"]
-    IMDS --> I3["Maintenance strategy optimization"]
+A reproducible demo for Semi-Markov deterioration modelling and finite-horizon
+maintenance decision optimisation for engineering assets.
 
-    AM --> A1["Layer-wise quality monitoring"]
-    AM --> A2["Vision-based consistency evaluation"]
-    AM --> A3["Interpretable quality indicators"]
+Main role: methodological foundation for deterioration-state modelling and
+maintenance decision-making.
 
-    HMSF --> H1["Human Movement-State Feedback"]
-    WHSP --> W1["Multimodal human-state sensing"]
+### 3. [AM Layer Consistency Monitoring](https://github.com/liujiaresearcher-hash/am-layer-consistency-monitoring)
 
-    classDef theme fill:#F8FAFC,stroke:#111827,stroke-width:2px,color:#111827;
-    classDef core fill:#EEF6FF,stroke:#2F5D7C,stroke-width:2px,color:#111827;
-    classDef extension fill:#F5F7F2,stroke:#5F7F65,stroke-width:1.2px,color:#111827;
-    classDef detail fill:#FFFFFF,stroke:#CBD5E1,stroke-width:1px,color:#111827;
+A public-safe image-processing demo for layer-wise additive manufacturing
+process monitoring and quality-state assessment.
 
-    class Theme theme;
-    class IMDS,AM core;
-    class WHSP,HMSF extension;
-    class I1,I2,I3,A1,A2,A3,W1,H1 detail;
-```
-
-These exploratory extensions place movement-based feedback as the main
-HCI-facing thread, with wearable sensing used as complementary state
-information.
-
-## Core Research Directions
-
-### Infrastructure Condition Intelligence
-
-I study methods that convert inspection and monitoring observations into
-interpretable condition indicators for bridges and infrastructure systems.
-This direction emphasizes deterioration representation, uncertainty awareness,
-and maintenance-relevant state assessment.
-
-### Additive Manufacturing Quality Systems
-
-I explore vision-based and data-driven approaches for layer-wise quality
-assessment in additive manufacturing. The goal is to evaluate process
-consistency from image data and develop quality indicators that support
-process monitoring and engineering feedback.
-
-### Mechanics-informed Decision Modeling
-
-My work connects data-driven assessment with engineering mechanics and
-decision models. I am particularly interested in stochastic deterioration
-modeling, semi-Markov decision processes, and optimization methods that
-translate state information into maintenance or control strategies.
-
-## Featured Projects
-
-### [infrastructure-maintenance-decision-support](https://github.com/liujiaresearcher-hash/infrastructure-maintenance-decision-support)
-
-Decision-support modeling for infrastructure maintenance under uncertain
-deterioration.
-
-| Field | Summary |
-| --- | --- |
-| **Problem** | Infrastructure assets deteriorate under uncertainty, while maintenance decisions must balance condition, risk, cost, and long-term performance. |
-| **Method** | Semi-Markov decision process modeling for bridge and infrastructure maintenance planning. |
-| **Output** | Decision-support logic for evaluating maintenance strategies under uncertain deterioration trajectories. |
-| **Research relevance** | Forms the decision-optimization core of my research narrative by linking infrastructure state modeling with maintenance strategy selection. |
-
-### [am-layer-consistency-monitoring](https://github.com/liujiaresearcher-hash/am-layer-consistency-monitoring)
-
-Vision-based monitoring workflow for layer-wise quality consistency in
+Main role: process monitoring and quality-state evidence for automated /
 additive manufacturing.
 
-| Field | Summary |
-| --- | --- |
-| **Problem** | Layer-wise quality variation in additive manufacturing may affect final part reliability and process stability. |
-| **Method** | Image-based consistency evaluation using interpretable layer-level quality indicators. |
-| **Output** | A monitoring workflow for extracting visual features and assessing layer consistency. |
-| **Research relevance** | Extends engineering AI from civil infrastructure to manufacturing quality assessment while preserving a data-to-assessment-to-feedback logic. |
+## Exploratory State-Feedback Extensions
 
-### [Human Movement-State Assessment and Feedback](https://github.com/liujiaresearcher-hash/human-movement-state-feedback)
+I have also built small exploratory demos on wearable-state profiling and
+movement-state feedback. These repositories are not the main focus of my
+current PhD application direction, but they reflect a broader interest in
+interpretable state assessment and feedback design.
 
-A movement-first research prototype that derives movement-quality indicators
-and ergonomic-state cues from synthetic 2D pose landmarks, including trunk
-flexion, shoulder elevation, smoothness, rhythm, symmetry, and consistency.
-
-| Field | Summary |
-| --- | --- |
-| **Problem** | How can body-tracking data be transformed into interpretable movement-state indicators and user-facing feedback? |
-| **Method** | Synthetic 2D pose landmarks; trunk flexion, shoulder elevation, smoothness, rhythm, symmetry, and consistency indicators; ergonomic-state cues; feedback rationale cards. |
-| **Output** | Movement-state summaries, ergonomic cue summaries, feedback rationale cards, and exploratory user-facing feedback examples. |
-| **Research relevance** | This demo extends my state-assessment background toward embodied HCI by treating movement not only as a measurable signal, but as part of how users perceive, regulate, and interact through the body. It explores how movement indicators may be translated into feedback rationale and user-facing feedback for embodied interaction and human-centred work systems. |
-
-Boundary: synthetic 2D pose landmarks only; exploratory and non-clinical; not a
-clinical rehabilitation tool, full RULA/REBA assessment, or full biomechanical
-model.
-
-### [Wearable Human-State Profiling from Physiological Signals](https://github.com/liujiaresearcher-hash/wearable-human-state-profiling)
-
-A reproducible WESAD-based prototype for wearable human-state sensing using
-Empatica E4 ACC, BVP, EDA, and TEMP signals.
-
-| Field | Summary |
-| --- | --- |
-| **Problem** | Human state can influence operational performance, safety, and interaction with engineered systems. |
-| **Method** | Physiological sensing workflow for baseline/stress modeling, subject-level state profiles, explanation summaries, uncertainty reporting, and feedback-card examples. |
-| **Output** | A structured exploratory workflow for converting wearable signals into interpretable human-state indicators and reflective user-facing feedback cards. |
-| **Research relevance** | This demo complements the movement-feedback prototype by exploring how physiological sensing signals can be organised into interpretable human-state indicators. It is intended as an exploratory, non-clinical step toward personalised and understandable user-state feedback. |
-
-Together, these exploratory demos extend my engineering state-assessment
-background toward human-state sensing and reflective user-facing feedback, with
-movement-based indicators as the main embodied interaction thread and
-physiological sensing as complementary state information.
+- [wearable-human-state-profiling](https://github.com/liujiaresearcher-hash/wearable-human-state-profiling)
+- [human-movement-state-feedback](https://github.com/liujiaresearcher-hash/human-movement-state-feedback)
 
 ## Technical Skills
 
@@ -221,21 +96,16 @@ physiological sensing as complementary state information.
 | Area | Skills |
 | --- | --- |
 | **Programming & Data** | Python, MATLAB, data analysis, scientific computing |
-| **Engineering Modeling** | Structural engineering, bridge systems, finite element analysis, civil infrastructure assessment |
-| **AI / Decision Modeling** | Computer vision for inspection, statistical modeling, stochastic processes, semi-Markov decision processes, maintenance decision optimization |
+| **Engineering Modelling** | degradation modelling, condition assessment, process monitoring, quality-state indicators |
+| **AI / Decision Modelling** | predictive maintenance, PHM, stochastic processes, Semi-Markov decision processes, dynamic programming, decision optimisation |
 | **Research & Documentation** | Git, GitHub, VS Code, Markdown, LaTeX, reproducible research documentation |
 
 ## Research Vision
 
-My research vision is to develop reliable, interpretable, and
-decision-oriented engineering AI systems by integrating monitoring data,
-physical knowledge, and optimization models.
-
-Rather than treating AI as a standalone prediction tool, I aim to study how
-models can support engineering reasoning: what should be measured, how system
-state should be represented, how uncertainty should be handled, and how
-assessment results can inform maintenance, manufacturing, or operational
-decisions.
+My long-term goal is to develop reliable and interpretable
+monitoring-to-decision frameworks for engineering systems, especially where
+physical degradation, process variability, uncertainty, and decision constraints
+must be considered together.
 
 ## Contact
 
