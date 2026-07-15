@@ -69,7 +69,20 @@ maintenance decision optimisation for engineering assets.
 Main role: methodological foundation for deterioration-state modelling and
 maintenance decision-making.
 
-### 3. [AM Layer Consistency Monitoring](https://github.com/liujiaresearcher-hash/am-layer-consistency-monitoring)
+### 3. Physics-Informed GNN for Wind-Turbine Drivetrain Health Monitoring
+
+A reproducible proof of concept combining a simulated torsional drivetrain
+graph, gearbox health estimation, next-step response prediction, and nodal
+torque-balance regularization.
+
+- MLP, GNN and physics-informed GNN comparison
+- ID and three extrapolation regimes
+- Leakage-free trajectory splits and multi-seed evaluation
+- Physics-consistency and predictive-performance assessment
+
+[Repository](https://github.com/liujiaresearcher-hash/wind-turbine-physics-informed-gnn)
+
+### 4. [AM Layer Consistency Monitoring](https://github.com/liujiaresearcher-hash/am-layer-consistency-monitoring)
 
 A public-safe image-processing demo for layer-wise additive manufacturing
 process monitoring and quality-state assessment.
