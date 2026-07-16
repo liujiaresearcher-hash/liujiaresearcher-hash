@@ -2,17 +2,16 @@
 
 # Jia Liu
 
-**Engineer & Researcher | Monitoring-to-Decision Modelling for Engineering Assets**
+**Engineer & Researcher | Monitoring-to-Decision Modelling for Engineering Assets and Manufacturing Processes**
 
-Health / Quality State Assessment · Predictive Maintenance · Process Monitoring · Decision Optimisation · Engineering AI
+Asset Health Monitoring · Predictive Maintenance · Physics-Informed Learning · Process State Estimation · Decision and Control Support
 
 <p>
   <img src="https://img.shields.io/badge/Monitoring--to--Decision-research-2F5D7C?style=flat-square" alt="Monitoring-to-Decision" />
   <img src="https://img.shields.io/badge/Predictive%20Maintenance-PHM-4B6F8A?style=flat-square" alt="Predictive Maintenance" />
-  <img src="https://img.shields.io/badge/Process%20Monitoring-quality%20state-5F7F65?style=flat-square" alt="Process Monitoring" />
+  <img src="https://img.shields.io/badge/Physics--Informed%20Learning-engineering%20AI-566B78?style=flat-square" alt="Physics-Informed Learning" />
+  <img src="https://img.shields.io/badge/Process%20Monitoring-state%20and%20control-5F7F65?style=flat-square" alt="Process Monitoring and Control" />
   <img src="https://img.shields.io/badge/Decision%20Optimisation-SMDP-7A6A3A?style=flat-square" alt="Decision Optimisation" />
-  <img src="https://img.shields.io/badge/Python-data%20analysis-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/MATLAB-engineering%20modelling-6B7280?style=flat-square" alt="MATLAB" />
 </p>
 
 </div>
@@ -21,104 +20,113 @@ Health / Quality State Assessment · Predictive Maintenance · Process Monitorin
 
 ## Research Identity
 
-I work on decision-oriented engineering AI for asset health and process quality
-assessment. My research interest is how monitoring, inspection, and sensing
-data can be transformed into interpretable health or quality states, and how
-these states can support maintenance, control, and operational decisions under
-uncertainty.
+I work on decision-oriented engineering AI for asset health management and manufacturing-process quality control.
 
-My current focus is on:
+My research interest is how monitoring, inspection, sensing, and simulation data can be transformed into interpretable health or process states, and how these states can support prediction, maintenance, control, and operational decisions under uncertainty.
 
-- health-state modelling and predictive maintenance for degradation-driven engineering assets;
-- maintenance and replacement decision support under uncertainty;
-- process monitoring and quality-state assessment for automated/additive manufacturing;
-- transferable monitoring-to-decision workflows for energy assets, infrastructure systems, and manufacturing processes.
+My current focus includes:
 
-## Research Pipeline
+- health-state modelling and predictive maintenance for degradation-driven energy and mechanical assets;
+- physics-informed and graph-based learning for interacting engineering components;
+- stochastic deterioration modelling and maintenance decision optimisation;
+- process-state monitoring and transparent closed-loop control for additive manufacturing;
+- transferable monitoring-to-decision workflows across energy assets, infrastructure systems, and manufacturing processes.
+
+## Monitoring-to-Decision Pipeline
 
 ```mermaid
 flowchart LR
-    A["Monitoring / Inspection / Sensing Data"]
+    A["Monitoring / Inspection / Sensing"]
     B["Feature and Indicator Representation"]
-    C["Health / Quality State Assessment"]
-    D["Uncertainty-Aware Prediction"]
-    E["Maintenance / Control / Operational Decision Support"]
+    C["Health / Quality / Process State"]
+    D["Prediction and Uncertainty"]
+    E["Maintenance / Control / Operational Decision"]
 
     A --> B --> C --> D --> E
 ```
 
-This pipeline reflects a decision-oriented view of engineering AI: monitoring
-data are not the endpoint, but the starting point for interpretable state
-assessment and practical engineering decisions.
+Monitoring data are not treated as the endpoint. The objective is to construct interpretable state representations and connect them to defensible engineering decisions.
 
 ## Featured Research Demos
 
-### 1. [Battery Predictive Maintenance Decision](https://github.com/liujiaresearcher-hash/battery-predictive-maintenance-decision)
+### Asset Health and Maintenance Decisions
 
-A lightweight, public-safe Python demo for battery health-state assessment,
-degradation-aware maintenance triggers, and decision support for energy asset
-management.
+#### 1. [Battery Predictive Maintenance Decision](https://github.com/liujiaresearcher-hash/battery-predictive-maintenance-decision)
 
-Main role: energy asset PHM / BESS-oriented predictive maintenance demo.
+A reproducible battery PHM baseline linking health-related feature extraction, remaining-life estimation, uncertainty indicators, and degradation-aware maintenance-policy comparison.
 
-### 2. [Infrastructure Maintenance Decision Support](https://github.com/liujiaresearcher-hash/infrastructure-maintenance-decision-support)
+**Research role:** energy asset PHM, predictive maintenance, and health-to-decision modelling.
 
-A reproducible demo for Semi-Markov deterioration modelling and finite-horizon
-maintenance decision optimisation for engineering assets.
+---
 
-Main role: methodological foundation for deterioration-state modelling and
-maintenance decision-making.
+#### 2. [Physics-Informed GNN for Wind-Turbine Drivetrain Health Monitoring](https://github.com/liujiaresearcher-hash/wind-turbine-physics-informed-gnn)
 
-### 3. Physics-Informed GNN for Wind-Turbine Drivetrain Health Monitoring
+A reproducible proof of concept representing a simulated rotor–shaft–gearbox–generator drivetrain as a component interaction graph.
 
-A reproducible proof of concept combining a simulated torsional drivetrain
-graph, gearbox health estimation, next-step response prediction, and nodal
-torque-balance regularization.
+The project compares MLP, GNN, and physics-informed GNN models for gearbox health-parameter estimation and next-step dynamic-response prediction, with nodal torque-balance residuals used as physical-consistency constraints.
 
-- MLP, GNN and physics-informed GNN comparison
-- ID and three extrapolation regimes
-- Leakage-free trajectory splits and multi-seed evaluation
-- Physics-consistency and predictive-performance assessment
+**Research role:** physics-informed learning, graph-based condition monitoring, and mechanical-asset prognostics.
 
-[Repository](https://github.com/liujiaresearcher-hash/wind-turbine-physics-informed-gnn)
+---
 
-### 4. [AM Layer Consistency Monitoring](https://github.com/liujiaresearcher-hash/am-layer-consistency-monitoring)
+#### 3. [Infrastructure Maintenance Decision Support](https://github.com/liujiaresearcher-hash/infrastructure-maintenance-decision-support)
 
-A public-safe image-processing demo for layer-wise additive manufacturing
-process monitoring and quality-state assessment.
+A reproducible demo for Semi-Markov deterioration modelling and finite-horizon maintenance decision optimisation.
 
-Main role: process monitoring and quality-state evidence for automated /
-additive manufacturing.
+**Research role:** stochastic degradation modelling, engineering-asset condition assessment, and maintenance decision support.
+
+### Additive Manufacturing Process Monitoring and Control
+
+#### 4. [WAAM Arc-Length Monitoring and Closed-Loop Control](https://github.com/liujiaresearcher-hash/waam-arc-length-monitoring-control)
+
+A synthetic and reproducible WAAM process demo covering residual-aware arc-length filtering, trend detection, rule-based duty-cycle recommendation, and open-loop versus closed-loop evaluation.
+
+The repository demonstrates how noisy process observations can be converted into an interpretable process state and then into transparent control recommendations.
+
+**Research role:** process-state estimation, monitoring-to-control integration, and closed-loop additive-manufacturing research.
+
+---
+
+#### 5. [AM Layer Consistency Monitoring](https://github.com/liujiaresearcher-hash/am-layer-consistency-monitoring)
+
+A public-safe image-processing demo for layer-wise additive-manufacturing monitoring and quality-state assessment.
+
+**Research role:** visual process monitoring, geometric consistency assessment, and manufacturing-quality evidence.
+
+## How the Projects Connect
+
+| Research problem                                                 | Demonstration                                      |
+| ---------------------------------------------------------------- | -------------------------------------------------- |
+| Health assessment and maintenance decisions for energy assets    | Battery Predictive Maintenance Decision            |
+| Physics-informed monitoring of interacting mechanical components | Wind-Turbine Drivetrain PI-GNN                     |
+| Stochastic deterioration and sequential maintenance optimisation | Infrastructure Maintenance Decision Support        |
+| Process-state estimation and feedback-control evaluation         | WAAM Arc-Length Monitoring and Closed-Loop Control |
+| Visual consistency and manufacturing-quality monitoring          | AM Layer Consistency Monitoring                    |
+
+Together, these repositories explore a common question:
+
+> How can heterogeneous engineering data be transformed into interpretable states and then connected to maintenance, control, or operational decisions?
 
 ## Exploratory State-Feedback Extensions
 
-I have also built small exploratory demos on wearable-state profiling and
-movement-state feedback. These repositories are not the main focus of my
-current PhD application direction, but they reflect a broader interest in
-interpretable state assessment and feedback design.
+I have also developed small exploratory demos on wearable-state profiling and movement-state feedback. These projects are not the main focus of my current PhD application direction, but they reflect a broader interest in interpretable state assessment and feedback design.
 
-- [wearable-human-state-profiling](https://github.com/liujiaresearcher-hash/wearable-human-state-profiling)
-- [human-movement-state-feedback](https://github.com/liujiaresearcher-hash/human-movement-state-feedback)
+* [Wearable Human-State Profiling](https://github.com/liujiaresearcher-hash/wearable-human-state-profiling)
+* [Human Movement-State Feedback](https://github.com/liujiaresearcher-hash/human-movement-state-feedback)
 
 ## Technical Skills
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=python,matlab,git,github,vscode,md,latex" alt="Python, MATLAB, Git, GitHub, VS Code, Markdown, and LaTeX" />
-</p>
-
-| Area | Skills |
-| --- | --- |
-| **Programming & Data** | Python, MATLAB, data analysis, scientific computing |
-| **Engineering Modelling** | degradation modelling, condition assessment, process monitoring, quality-state indicators |
-| **AI / Decision Modelling** | predictive maintenance, PHM, stochastic processes, Semi-Markov decision processes, dynamic programming, decision optimisation |
-| **Research & Documentation** | Git, GitHub, VS Code, Markdown, LaTeX, reproducible research documentation |
+| Area                      | Skills                                                                                                         |
+| ------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| **Programming and Data**  | Python, MATLAB, pandas, NumPy, scientific computing                                                            |
+| **Machine Learning**      | PyTorch, PyTorch Geometric, scikit-learn, graph neural networks                                                |
+| **Engineering Modelling** | degradation modelling, condition assessment, simplified dynamic simulation, process monitoring                 |
+| **Decision and Control**  | predictive maintenance, Semi-Markov decision processes, dynamic programming, rule-based closed-loop evaluation |
+| **Research Practice**     | Git, GitHub, VS Code, Markdown, LaTeX, reproducible experiments and technical documentation                    |
 
 ## Research Vision
 
-My long-term goal is to develop reliable and interpretable
-monitoring-to-decision frameworks for engineering systems, especially where
-physical degradation, process variability, uncertainty, and decision constraints
-must be considered together.
+My long-term goal is to develop reliable and interpretable monitoring-to-decision methods for complex engineering systems, especially where physical degradation, process variability, uncertainty, and operational constraints must be considered together.
 
 ## Contact
 
