@@ -59,13 +59,13 @@ A reproducible battery PHM baseline linking health-related feature extraction, r
 
 ---
 
-#### 2. [Physics-Informed GNN for Wind-Turbine Drivetrain Health Monitoring](https://github.com/liujiaresearcher-hash/wind-turbine-physics-informed-gnn)
+#### 2. [Physics-Informed Health Monitoring and Health-Aware RL Control for a Wind-Turbine Drivetrain](https://github.com/liujiaresearcher-hash/wind-turbine-physics-informed-gnn)
 
-A reproducible proof of concept representing a simulated rotor–shaft–gearbox–generator drivetrain as a component interaction graph.
+A reproducible research prototype linking component-graph health estimation, physics-consistent dynamic prediction, and degradation-aware derating control in a simulated five-component wind-turbine drivetrain.
 
-The project compares MLP, GNN, and physics-informed GNN models for gearbox health-parameter estimation and next-step dynamic-response prediction, with nodal torque-balance residuals used as physical-consistency constraints.
+The project first compares MLP, GNN, and physics-informed GNN models for gearbox health-parameter estimation and next-step drivetrain-response prediction. It then extends the monitoring pipeline with greedy, rule-based, health-unaware PPO, and health-aware PPO control policies to examine the trade-off between cumulative normalized energy and gearbox-load-induced synthetic degradation under unseen wind profiles.
 
-**Research role:** physics-informed learning, graph-based condition monitoring, and mechanical-asset prognostics.
+**Research role:** physics-informed PHM, health-aware reinforcement learning, and monitoring-to-decision integration.
 
 ---
 
@@ -98,7 +98,7 @@ A public-safe image-processing demo for layer-wise additive-manufacturing monito
 | Research problem                                                 | Demonstration                                      |
 | ---------------------------------------------------------------- | -------------------------------------------------- |
 | Health assessment and maintenance decisions for energy assets    | Battery Predictive Maintenance Decision            |
-| Physics-informed monitoring of interacting mechanical components | Wind-Turbine Drivetrain PI-GNN                     |
+| Physics-informed health estimation and degradation-aware operational control | [Wind-Turbine Drivetrain Monitoring and Health-Aware RL Control](https://github.com/liujiaresearcher-hash/wind-turbine-physics-informed-gnn) |
 | Stochastic deterioration and sequential maintenance optimisation | Infrastructure Maintenance Decision Support        |
 | Process-state estimation and feedback-control evaluation         | WAAM Arc-Length Monitoring and Closed-Loop Control |
 | Visual consistency and manufacturing-quality monitoring          | AM Layer Consistency Monitoring                    |
