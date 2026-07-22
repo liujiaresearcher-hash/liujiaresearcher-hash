@@ -2,7 +2,7 @@
 
 # Jia Liu
 
-**Engineer & Researcher | Monitoring-to-Decision Modelling for Engineering Assets and Manufacturing Processes**
+**Engineer & Researcher | Monitoring-to-Decision Modelling for Engineering, Manufacturing, and Human-Centred Systems**
 
 Asset Health Monitoring · Predictive Maintenance · Physics-Informed Learning · Process State Estimation · Decision and Control Support
 
@@ -20,9 +20,9 @@ Asset Health Monitoring · Predictive Maintenance · Physics-Informed Learning �
 
 ## Research Identity
 
-I work on decision-oriented engineering AI for asset health management and manufacturing-process quality control.
+I work on decision-oriented engineering AI for asset health management, manufacturing-process quality control, and human-centred automation.
 
-My research interest is how monitoring, inspection, sensing, and simulation data can be transformed into interpretable health or process states, and how these states can support prediction, maintenance, control, and operational decisions under uncertainty.
+My research interest is how monitoring, inspection, sensing, and simulation data can be transformed into interpretable engineering, process, or human states, and how these states can support prediction, maintenance, control, feedback, and operational decisions under uncertainty.
 
 My current focus includes:
 
@@ -30,7 +30,8 @@ My current focus includes:
 - physics-informed and graph-based learning for interacting engineering components;
 - stochastic deterioration modelling and maintenance decision optimisation;
 - process-state monitoring and transparent closed-loop control for additive manufacturing;
-- transferable monitoring-to-decision workflows across energy assets, infrastructure systems, and manufacturing processes.
+- wearable operator-state sensing, uncertainty-aware interpretation, and feedback design as a human-centred extension; and
+- transferable monitoring-to-decision workflows across energy assets, infrastructure systems, manufacturing processes, and human-centred systems.
 
 ## Monitoring-to-Decision Pipeline
 
@@ -38,14 +39,14 @@ My current focus includes:
 flowchart LR
     A["Monitoring / Inspection / Sensing"]
     B["Feature and Indicator Representation"]
-    C["Health / Quality / Process State"]
+    C["Engineering / Process / Human State"]
     D["Prediction and Uncertainty"]
-    E["Maintenance / Control / Operational Decision"]
+    E["Maintenance / Control / Feedback Decision"]
 
     A --> B --> C --> D --> E
 ```
 
-Monitoring data are not treated as the endpoint. The objective is to construct interpretable state representations and connect them to defensible engineering decisions.
+Monitoring data are not treated as the endpoint. The objective is to construct interpretable state representations and connect them to defensible engineering or human-centred decisions.
 
 ## Featured Research Demos
 
@@ -93,6 +94,22 @@ A public-safe image-processing demo for layer-wise additive-manufacturing monito
 
 **Research role:** visual process monitoring, geometric consistency assessment, and manufacturing-quality evidence.
 
+### Human-Centred State Sensing and Feedback
+
+#### 6. [Wearable Human-State Profiling](https://github.com/liujiaresearcher-hash/wearable-human-state-profiling)
+
+An operator-state sensing baseline using wearable physiological and motion signals, leave-one-subject-out evaluation, uncertainty-aware outputs, subject-level profiles, and feedback-card generation.
+
+**Research role:** human-state sensing extension, interpretable operator-state assessment, and future HRC feedback inputs.
+
+---
+
+#### 7. [Human Movement-State Feedback](https://github.com/liujiaresearcher-hash/human-movement-state-feedback)
+
+A companion movement-state prototype using synthetic 2D pose landmarks to explore movement-quality indicators, ergonomic-state cues, feedback rationale, and future user-study design.
+
+**Research role:** movement and ergonomic-state feedback prototyping for human-centred systems.
+
 ## How the Projects Connect
 
 | Research problem                                                 | Demonstration                                      |
@@ -102,17 +119,12 @@ A public-safe image-processing demo for layer-wise additive-manufacturing monito
 | Stochastic deterioration and sequential maintenance optimisation | Infrastructure Maintenance Decision Support        |
 | Process-state estimation and feedback-control evaluation         | WAAM Arc-Length Monitoring and Closed-Loop Control |
 | Visual consistency and manufacturing-quality monitoring          | AM Layer Consistency Monitoring                    |
+| Operator-state sensing, uncertainty and interpretable feedback    | Wearable Human-State Profiling                     |
+| Movement and ergonomic-state feedback prototyping                 | Human Movement-State Feedback                      |
 
 Together, these repositories explore a common question:
 
-> How can heterogeneous engineering data be transformed into interpretable states and then connected to maintenance, control, or operational decisions?
-
-## Exploratory State-Feedback Extensions
-
-I have also developed small exploratory demos on wearable-state profiling and movement-state feedback. These projects are not the main focus of my current PhD application direction, but they reflect a broader interest in interpretable state assessment and feedback design.
-
-* [Wearable Human-State Profiling](https://github.com/liujiaresearcher-hash/wearable-human-state-profiling)
-* [Human Movement-State Feedback](https://github.com/liujiaresearcher-hash/human-movement-state-feedback)
+> How can heterogeneous sensing and monitoring data be transformed into interpretable engineering, process, or human states and then connected to reliable decisions, control, or feedback?
 
 ## Technical Skills
 
